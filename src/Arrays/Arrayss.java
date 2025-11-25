@@ -19,9 +19,7 @@ public class Arrayss {
 
 
     }
-    public void update(int[]a ,int index,int nvalue){
-        a[index]=nvalue;
-    }
+
 
 
 
