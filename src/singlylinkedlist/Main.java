@@ -9,6 +9,7 @@ public class Main {
         list.addfrist(30);
         list.addfrist(40);
        // list.removefirst();
+        list.removelast();
         list.display();
 
 

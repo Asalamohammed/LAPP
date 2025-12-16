@@ -50,13 +50,31 @@ public class singlylinedlist<E> {
         if (isempty()) return null;
         return tail.getData();
     }
+    public E removelast(){
+        if (isempty())return null;
+        E delete= tail.getData();
+        if (head==tail){
+            tail=null;
+            head=null;
+        }
+            else {
+            Node<E>temp=head;
+            while (temp.getNext()!=tail){
+                temp=temp.getNext();
+
+        }temp.setNext(null);
+            tail=temp;
+    }
+            size--;
+            return delete;
+    }
 
 
         public void display () {
             Node<E> temp = head;
-            while (temp != null)
-                System.out.println(temp.getData() + "----->");
-            temp = temp.getNext();
+            while (temp != null){
+                System.out.print(temp.getData() + "----->");
+            temp = temp.getNext();}
             System.out.println("null");
         }
 
