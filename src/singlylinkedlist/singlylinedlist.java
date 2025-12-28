@@ -6,6 +6,7 @@ public class singlylinedlist<E> {
     private Node<E> head = null;
     private Node<E> tail =null;
     private int size =0;
+
     public int size(){
         return size;
     }
